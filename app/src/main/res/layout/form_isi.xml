@@ -1,0 +1,195 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Form Pengisian Data"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/img"
+            android:padding="8dp"
+            android:text="Info\nForm berikut ini bertujuan untuk memberikan informasi kepada pusat agar dapat mudah dilaporkan"
+            android:textColor="@android:color/black" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Jenis Tes : Harus Diisi"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/rb_rapid_antigen"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Rapid Antigen" />
+
+            <RadioButton
+                android:id="@+id/rb_pcr"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="PCR" />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/tanggal_terkonfirmasi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Tanggal Terkonfirmasi : Harus Diisi"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Pilih Tanggal"
+            android:focusable="false"
+            android:clickable="true"
+            android:drawableEnd="@drawable/img_1"
+            android:inputType="date" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="NIK : Harus Diisi"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Masukkan NIK"
+            android:inputType="number" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Nama : Harus Diisi"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Masukkan nama" />
+
+        <TextView
+            android:id="@+id/tanggal_lahir"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Tanggal Lahir : Harus Diisi"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Pilih Tanggal"
+            android:focusable="false"
+            android:clickable="true"
+            android:drawableEnd="@drawable/img_1"
+            android:inputType="date" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Jenis Kelamin : Harus Diisi"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/rb_laki_laki"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Laki - laki" />
+
+            <RadioButton
+                android:id="@+id/rb_perempuan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Perempuan" />
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Hubungan Dengan Anda : Harus Diisi"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/rb_orangtua"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Orangtua" />
+
+            <RadioButton
+                android:id="@+id/rb_suami_istri"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Suami/istri" />
+
+            <RadioButton
+                android:id="@+id/rb_anak"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Anak" />
+
+            <RadioButton
+                android:id="@+id/rb_kerabat_lainnya"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Kerabat Lainnya" />
+        </RadioGroup>
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Dengan ini saya menyetujui bahwa data yang saya isikan adalah benar" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:backgroundTint="#16A75C"
+            android:text="Selanjutnya"
+            android:textColor="@android:color/white" />
+    </LinearLayout>
+</ScrollView>
